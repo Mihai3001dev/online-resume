@@ -1,13 +1,23 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ardelean Mihai Ionut-Personal Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My personal online resume showcasing my skills, projects, and contact information.">
+        <meta name="keywords" content="web development, front-end, portfolio, developer, skills, projects, resume">
+        <meta name="author" content="Mihai Ardelean">
+        <meta property="og:title" content="Mihai's Online Resume">
+        <meta property="og:description" content="A showcase of my web development skills and projects.">
+        <meta property="og:image" content="URL_to_image.jpg">
+        <meta property="og:url" content="https://mihai3001dev.github.io/online-resume/">
+        <title>Mihai's Online Resume</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
-</head>
+
+    </head>
+    
 <body>
     <!-- Header -->
     <header>
@@ -41,7 +51,7 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project" data-aos="fade-up">
             <h3>Crypto Portfolio Tracker </h3>
             <p>
                 <li>Tracks Bitcoin (BTC), Ethereum (ETH), and Solana (SOL)</li>
@@ -55,7 +65,7 @@
             </p>
             <a href="https://github.com/Mihai3001dev/Crypto-Portfolio" target="_blank">View Project</a>
         </div>
-        <div class="project">
+        <div class="project" data-aos="fade-up">
             <h3>Recipe Finder-Web Page</h3>
             <p>
                 <li>The site allows users to search for recipes based on specific ingredients.</li>
@@ -64,7 +74,7 @@
             </p>
             <a href="https://github.com/Mihai3001dev/CSS-HTML-Vanilla-Js-Recipe-finder-Web-Page" target="_blank">View Project</a>
         </div>
-        <div class="project">
+        <div class="project" data-aos="fade-up">
             <h3>Musical Quizz-Interactive Web Page</h3>
             <p>
                 <li>This webpage features an interactive quiz that recommends a YouTube playlist based on the user's mood and music preferences.</li>
@@ -102,5 +112,11 @@
     <footer>
         <p>&copy; 2025 Ardelean Mihai Ionut</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>

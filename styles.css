@@ -35,6 +35,7 @@ header p {
     animation: slideUp 1s ease-out 0.5s;
 }
 
+/* Hover effect on focus */
 .profilePhoto {
     width: 250px;
     height: 250px;
@@ -42,8 +43,22 @@ header p {
     border: 5px solid rgb(255, 248, 248);
     object-fit: cover;
     margin-top: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.profilePhoto:hover {
+    transform: scale(1.1);  
+    opacity: 0.9;  
+}
+
+
+.profilePhoto {
     animation: bounceIn 2s ease-out;
 }
+
+
+
+
 
 /* About Me Section */
 #about {
@@ -69,11 +84,15 @@ header p {
 
 
 
+
+
+
 /* Skills Section */
 #skills {
     padding: 40px 20px;
     background-color: #fafafa;
     text-align: center;
+     animation: fadeIn 2s ease-in-out;
 }
 
 #skills h2 {
@@ -108,7 +127,6 @@ header p {
     top: 0;
     font-size: 1.4rem; 
 }
-
 
 
 
@@ -245,5 +263,18 @@ footer {
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
